@@ -9,5 +9,6 @@
         <TextBlock Height="20" HorizontalAlignment="Left" Margin="49,106,0,0" Name="textBlock1" Text="第1問" VerticalAlignment="Top" Width="36" Foreground="#FFFAE9F3" Visibility="Hidden" />
         <TextBlock Height="42" HorizontalAlignment="Left" Margin="45,124,0,0" Name="textBlock2" Text="Yesボタンを押してね" VerticalAlignment="Top" Width="414" Foreground="White" />
         <Canvas Height="69" HorizontalAlignment="Left" Margin="33,104,0,0" Name="canvas1" VerticalAlignment="Top" Width="448" />
+        <TextBlock Height="27" HorizontalAlignment="Left" Margin="382,67,0,0" Name="textBlock3" Text="TextBlock" VerticalAlignment="Top" Width="99" />
     </Grid>
 </Window>

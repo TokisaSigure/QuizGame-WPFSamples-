@@ -25,6 +25,7 @@ namespace SelectGame
         int num=0;//状態遷移用変数
         int quesnum = 0;//問題数格納用変数
         DispatcherTimer dispatcherTimer;
+        int testnum=0;
         #endregion
 
         public MainWindow()
@@ -37,7 +38,8 @@ namespace SelectGame
         }
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
-
+            testnum++;
+            this.textBlock3.Text = testnum+"";
         }
 
 
