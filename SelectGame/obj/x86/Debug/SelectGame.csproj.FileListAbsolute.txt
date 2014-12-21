@@ -22,3 +22,12 @@ C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\
 C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.csproj.GenerateResource.Cache
 C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.exe
 C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.pdb
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\bin\Debug\SelectGame.exe
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\bin\Debug\SelectGame.pdb
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\MainWindow.baml
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\MainWindow.g.cs
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\App.g.cs
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame_MarkupCompile.cache
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.g.resources
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.Properties.Resources.resources
+C:\Users\1223063\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.csproj.GenerateResource.Cache
