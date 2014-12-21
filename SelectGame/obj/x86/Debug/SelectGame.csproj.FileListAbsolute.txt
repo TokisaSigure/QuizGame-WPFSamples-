@@ -11,3 +11,12 @@ c:\users\1223077\documents\visual studio 2010\Projects\SelectGame\SelectGame\obj
 c:\users\1223077\documents\visual studio 2010\Projects\SelectGame\SelectGame\obj\x86\Debug\SelectGame.pdb
 C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.exe
 C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.pdb
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\bin\Debug\SelectGame.exe
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\bin\Debug\SelectGame.pdb
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\MainWindow.baml
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\MainWindow.g.cs
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\App.g.cs
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame_MarkupCompile.cache
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.g.resources
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.Properties.Resources.resources
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Debug\SelectGame.csproj.GenerateResource.Cache

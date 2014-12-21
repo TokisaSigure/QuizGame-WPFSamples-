@@ -93,6 +93,16 @@ namespace SelectGame
         //Windowが呼び出されたら呼ばれる、つまりゲーム実行時に呼ばれる
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            string rootPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);//ドキュメントまでのパス
+            string Resource = @"\GitHub\QuizGame-WPFSamples-\img";//フォルダ内の画像の場所
+            BitmapImage bmImag;//Canvasに画像を表示するために宣言
+            Image imag;//Canvasに画像を表示するために宣言、Urlをうけとり、画像精製までの仕事を行うっポイ？
+            bmImag = new BitmapImage(new Uri(rootPath + Resource + "window1-1.png"));//画像URL渡し
+            imag = new Image();
+            imag.Source = bmImag;//画像のURL受け取り
+            imag.Width = 448;//画像の横サイズ設定
+            imag.Height = 248;//画像の縦サイズ設定
+            canvas1.Children.Add(imag);//Canvasに画像を表示
             /*
             // タイマー
             this.dispatcherTimer = new DispatcherTimer();
