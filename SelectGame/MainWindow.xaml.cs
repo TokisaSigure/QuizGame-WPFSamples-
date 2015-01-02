@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using Microsoft.SmallBasic.Library;
 
 namespace SelectGame
 {
@@ -26,6 +27,8 @@ namespace SelectGame
         int quesnum = 0;//問題数格納用変数
         DispatcherTimer dispatcherTimer;
         int testnum=0;
+        string rootPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);//ドキュメントまでのパス
+        string Resource = @"\GitHub\QuizGame-WPFSamples-\Music\";//音声データの場所
         #endregion
 
         //Windowが呼び出されたら呼ばれる、つまりゲーム実行時に呼ばれる
@@ -115,12 +118,14 @@ namespace SelectGame
                         {
                             this.textBlock2.Text = "はずれー！！";
                             num = 0;
+                            Sound.PlayAndWait(rootPath + Resource + "ぶっぶー1.wav");
                         }
                         else
                         {
                             this.textBlock2.Text = "正解！";
                             num++;
                             quesnum++;
+                            Sound.PlayAndWait(rootPath + Resource + "ピンポーン1.wav");
                         }
                         break;
                     default: this.textBlock2.Text = "現在ここまで！"; this.textBlock1.Text = "第" + quesnum + "問"; break;
