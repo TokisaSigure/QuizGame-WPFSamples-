@@ -11,3 +11,4 @@ C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Releas
 C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Release\SelectGame.csproj.GenerateResource.Cache
 C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Release\SelectGame.exe
 C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Release\SelectGame.pdb
+C:\Users\1223077\Documents\GitHub\QuizGame-WPFSamples-\SelectGame\obj\x86\Release\SelectGame.csprojResolveAssemblyReference.cache

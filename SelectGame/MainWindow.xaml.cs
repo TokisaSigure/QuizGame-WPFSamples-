@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using Microsoft.SmallBasic.Library;
+using System.Diagnostics;
 
 namespace SelectGame
 {
@@ -29,6 +30,10 @@ namespace SelectGame
         int testnum=0;
         string rootPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);//ドキュメントまでのパス
         string Resource = @"\GitHub\QuizGame-WPFSamples-\Music\";//音声データの場所
+        DateTime dt = DateTime.Now;//時間表示のための変数
+        int Hour;//便宜的に時間代入用変数を作ってみた
+        int Minute;//上に同じく、こっちは分
+
         #endregion
 
         //Windowが呼び出されたら呼ばれる、つまりゲーム実行時に呼ばれる
@@ -113,25 +118,81 @@ namespace SelectGame
             {
                 switch (num)
                 {
-                    case 1: this.textBlock2.Text = "結月ゆかりはボイスロイドである"; num++; break;
+                    case 1: this.textBlock2.Text = testClass.get_ques(); num++; break;
                     case 2: if (ans != 1)
                         {
-                            this.textBlock2.Text = "はずれー！！";
+                            this.textBlock2.Text = testClass.get_bad();
                             num = 0;
                             Sound.PlayAndWait(rootPath + Resource + "ぶっぶー1.wav");
                         }
                         else
                         {
-                            this.textBlock2.Text = "正解！";
+                            this.textBlock2.Text = testClass.get_good();
                             num++;
                             quesnum++;
                             Sound.PlayAndWait(rootPath + Resource + "ピンポーン1.wav");
                         }
                         break;
-                    default: this.textBlock2.Text = "現在ここまで！"; this.textBlock1.Text = "第" + quesnum + "問"; break;
+                    default: this.textBlock2.Text = Properties.Resources.stop; this.textBlock1.Text = "第" + quesnum + "問"; break;
                 }
             }
             //クイズ処理ここまで
+        }
+
+        /*現在時刻を取得*/
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            dt = DateTime.Now;//現在時刻取得
+            Hour = dt.Hour;//時間を入力
+            Minute = dt.Minute;//分を入力
+            this.label2.Content = dt.Hour+"時"+dt.Minute+"分"+dt.Second+"秒";
+        }
+
+        /*時間を23時に指定*/
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            Hour = 23;
+            Minute = 0;
+            this.label2.Content = Hour + "時" + Minute + "分";
+        }
+
+        /*時間を9時に指定*/
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            Hour = 9;
+            Minute = 0;
+            this.label2.Content = Hour + "時" + Minute + "分";
+        }
+
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+            if (Hour > 0 && Hour <= 10)
+            {
+                this.textBlock2.Text = "おはようございます";
+            }
+            else if (Hour > 10 && Hour <= 15)
+            {
+                this.textBlock2.Text = "おは・・・いえ、今何時だと思っているんですか？";
+            }
+            else if (Hour > 15)
+            {
+                this.textBlock2.Text = "もう半日以上過ぎてますよ、何をしているんですか。";
+            }
+        }
+
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            #region ニコニコが開くよ
+            //Process process = Process.Start(@"http://www.nicovideo.jp/");
+            #endregion
+
+            Process process = Process.Start(@"C:\Users\1223077\Desktop\AHS\VOICEROID+\yukari\VOICEROID.exe");
+
+        }
+
+        private void button8_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("shutdown.exe","/r");
         }
     }
 }
